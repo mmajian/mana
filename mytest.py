@@ -19,15 +19,19 @@ s = json.loads(page)
 #s = json.dumps(page)
 #s = json.loads('{"name":"test", "type":{"name":"seq", "parameter":["1", "2"]}}')
 #print s
-print s.keys()
-print s["resultcode"]
+#print s.keys()
+print s["result"][0].keys()
+print s["result"][0]["1"]
+print s["result"][0]["1"]["variety"]
+print s["result"][0]["1"]["maxpri"]
+print s["result"][0]["1"]["time"]
 #print s["type"]["name"]
 #print s["type"]["parameter"][1]
 #for val in s.keys():
 #	if
 #print s["result"]
-s1 = json.dumps(s["result"])
-print s1[0]
+#s1 = json.dumps(s["result"])
+#print s1[0]
 #s2 = json.loads(s1)
 #print s1
 #print s2.keys()
